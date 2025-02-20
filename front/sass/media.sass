@@ -1,0 +1,530 @@
+@media screen and (max-width: 1580px)
+  .box-google
+    .header
+      &-search
+        &-logo
+          margin-left: calc((100vw - 1490px) / 2)
+    .container-google
+      padding-left: calc((100vw - 1162px) / 2)
+
+@media screen and (max-width: 1481px)
+  .box-google
+    .header
+      &-search
+        &-logo
+          margin-left: -4px
+    .container-google
+      padding-left: 180px
+
+@media screen and (max-width: 1300px)
+  .box-google
+    .header
+      &-search
+        &-logo
+          margin-left: calc((100vw - 1155px) / 2)
+        &__search
+          width: 710px
+          &-types
+            width: 201px
+    .container-google
+      padding-left: calc((100vw - 1138px) / 2)
+
+@media screen and (max-width: 1160px)
+  .box-google
+    .header
+      &-search
+        &-logo
+          margin-left: 5px
+        &__account
+          margin-right: 25px
+    .container-google
+      padding-left: 18px
+
+@media screen and (max-width: 1120px)
+  .box-google
+    .header
+      &-search
+        //&-logo
+        //  margin-left: 10px
+        &__search
+          width: 64%
+          &-types
+           min-width: 159px
+    //.container-google
+    //  padding-left: 25px
+
+@media screen and (max-width: 1120px) and (orientation: landscape)
+  .box-google
+    .header
+      &-search
+        &__wrapper
+          width: 1111px
+
+@media screen and (max-width: 1040px) and (min-height: 501px) and (orientation: landscape)
+  .box-google
+    .container-google
+      padding: 0
+    .header-search
+      padding: 0 15px
+      width: 768px
+      margin: 0 auto
+      &__wrapper
+        margin-top: 0
+        justify-content: center
+        align-items: end
+        flex-direction: column-reverse
+        height: 108px
+        width: 100%
+      &-logo
+        position: absolute
+        display: flex
+        width: 150px
+        top: 20px
+        margin: 0
+        left: 50%
+        transform: translate(-50%)
+      &__search
+        width: 100%
+        padding: 9px 12px
+        &-svgmob
+          display: flex
+          width: 41px
+          height: 30px
+          fill: $color24
+          margin-right: 12px
+        &-prompt
+          width: 100%
+          border-right: none
+          p
+            overflow-x: hidden
+            white-space: nowrap
+          .cross
+            display: none
+        &-types
+          width: 100px
+          margin-left: 12px
+          justify-content: end
+          img
+            display: none
+          svg
+            height: 44px
+            width: 48px
+            padding: 0 12px
+            &:nth-last-child(1)
+              display: none
+            &:nth-last-child(2)
+              display: none
+      &__account
+        display: flex
+        align-items: center
+        margin-right: 0
+        margin-bottom: 22px
+        margin-left: 0
+        width: 100%
+        justify-content: space-between
+        svg
+          display: none
+        .burger
+          display: block
+          padding: 0
+    main
+      background-color: $color22
+      width: 100%
+      margin: 0 auto
+    .filters-google
+      background-color: $color2
+      border-bottom: 1px solid $color8
+      font-family: $font-googleSans
+      padding: 0 8% 12px
+      margin-bottom: 0
+      &__wrapper
+        padding: 0 0 0 10px
+        margin-top: 0
+        width: 100%
+        div
+          padding: 0 12px 6px 12px
+          border-bottom: 3px solid rgba(0, 0, 0, 0)
+          font-size: 16px
+          &:first-child
+            padding: 0 10px 6px 10px
+            color: #111
+    .result-google
+      width: 768px
+      margin: 0 auto
+      &__wrapper
+        background-color: $color2
+        margin: 0
+      &__item
+        width: 100%
+      &__fiq
+        width: 100%
+        background-color: $color2
+    .also-google
+      width: 768px
+      margin: 0 auto
+      background-color: $color2
+      &__wrapper
+        margin-top: 5px
+        padding-top: 37px
+    .footer-google
+      height: 133px
+      margin: 0 auto
+      padding-top: 68px
+      align-items: center
+
+@media screen and (max-width: 980px) and (min-height: 501px) and (orientation: landscape)
+  .box-google
+    .filters-google
+      padding: 0 2%
+
+@media screen and (max-width: 940px) and (orientation: portrait)
+  .box-google
+    .header
+      &-search
+        &-logo
+          display: none
+        &__search
+          padding-left: 0
+          margin-left: 30px
+          width: 83%
+          &-prompt
+            justify-content: flex-start
+            margin-left: 13px
+            .googleShort
+              display: flex
+              justify-content: center
+            .cross
+              margin-left: auto
+
+@media screen and (max-width: 894px) and (min-height: 501px) and (orientation: landscape)
+  .box-google
+    .filters-google
+      padding: 0
+
+@media screen and (max-width: 885px) and (orientation: portrait)
+  .box-google
+    .header
+      &-search
+        &__search
+          width: 80%
+    .filters-google
+      &__wrapper
+        width: 100%
+    .container-google
+      padding-right: 0
+
+
+//@media screen and (max-width: 853px) and (orientation: portrait)
+//  .box-google
+//    .header-search
+//      &__search
+//        width: 60%
+//        &-types
+//          width: 225px
+
+@media screen and (max-width: 765px) and (orientation: portrait)
+  .box-google
+    .filters
+      &-google
+        width: 755px
+
+@media screen and (max-width: 765px) and (orientation: portrait)
+  .box-google
+
+@media screen and (max-width: 645px) and (orientation: portrait)
+  .box-google
+    overflow-x: hidden
+    .container-google
+      padding: 0
+    .header-search
+      padding: 0 15px
+      &__wrapper
+        margin-top: 0
+        justify-content: center
+        align-items: end
+        flex-direction: column-reverse
+        height: 108px
+        width: 100%
+      &-logo
+        position: absolute
+        display: flex
+        width: 150px
+        top: 20px
+        margin: 0
+        left: 50%
+        transform: translate(-50%)
+      &__search
+        width: 100%
+        padding: 9px 12px
+        box-shadow: 0 2px 5px 2px rgba(64, 60, 67, 0.16)
+        &-svgmob
+          display: flex
+          width: 30px
+          height: 25px
+          fill: $color24
+          margin-right: 0
+          flex-shrink: 0
+        &-prompt
+          width: 100%
+          border-right: none
+          margin-left: 8px
+          p
+            overflow-x: hidden
+            white-space: nowrap
+          .cross
+           display: none
+          .googleShort
+            display: none
+        &-types
+          width: 100px
+          margin-left: 12px
+          justify-content: end
+          img
+            display: none
+          svg
+            height: 44px
+            width: 48px
+            padding: 0 12px
+            &:nth-last-child(1)
+              display: none
+            &:nth-last-child(2)
+              display: none
+      &__account
+        display: flex
+        align-items: center
+        margin-right: 0
+        margin-bottom: 22px
+        margin-left: 0
+        width: 100%
+        justify-content: space-between
+        svg
+          display: none
+        .burger
+          display: block
+          padding: 0
+    main
+      background-color: $color22
+    .filters-google
+      background-color: $color2
+      border-bottom: 1px solid $color8
+      width: 100%
+      font-family: $font-googleSans
+      margin-bottom: 12px
+      &__wrapper
+        padding: 0 0 6px 10px
+        margin-top: 0
+        width: 100%
+        div
+          padding: 0 12px 6px 12px
+          border-bottom: 3px solid rgba(0, 0, 0, 0)
+          font-size: 16px
+          &:first-child
+            padding: 0 10px 5px 10px
+            color: #111
+            border-bottom: 1 solid rgba(0, 0, 0, 0)
+    .result-google
+      &__wrapper
+        margin-top: -10px
+      &__item
+        width: 100%
+        margin-bottom: 8px
+        &:nth-child(2)
+          display: none
+        &-link
+          &-svg
+            margin-left: auto
+            margin-right: 0
+            margin-bottom: 0
+        &-description
+          width: 100%
+          &-txt
+            margin-left: 15px
+      &__fiq
+        width: 100%
+        background-color: $color2
+        padding: 20px 15px 11px 18px
+        margin-bottom: 8px
+        &-title
+          display: flex
+          justify-content: space-between
+        .q
+          &:last-child
+            margin-bottom: 0
+          &-txt
+            max-width: 300px
+    .also-google
+      width: 100%
+      background-color: $color2
+      margin-bottom: 11px
+      &__wrapper
+        width: 100%
+        margin: 0
+        padding: 13px 15px 10px 18px
+        height: auto
+      &__title
+        width: 100%
+        display: flex
+        justify-content: space-between
+      &__box
+        &-item
+          background-color: $color2
+          position: relative
+          width: 100%
+          &:nth-child(7), &:nth-child(8)
+            display: none
+          &:nth-child(6)
+            &:after
+              display: none
+          &:after
+            content: ""
+            display: block
+            position: absolute
+            bottom: -3px
+            left: 0
+            width: 100%
+            height: 1px
+            background-color: $color8
+          svg
+            flex-shrink: 0
+      &__more
+        display: none
+    .more-google
+      margin-top: 0
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 20px 15px
+      width: 100%
+      background-color: $color2
+      &__wrapper
+        height: 44px
+        background-color: $color22
+        width: 100%
+        border-radius: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 14px
+        font-family: $font-googleSans
+        svg
+          width: 20px
+          height: 20px
+          fill: $color19
+          margin-left: 5px
+    .footer-google
+      background-color: $color20
+      margin-top: 0
+      height: 140px
+      width: 100%
+      padding: 12px 0
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      flex-direction: column
+      .container-google
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-left: 0
+      &:before
+        display: none
+      &__wrapper
+        display: none
+        &-mob
+          display: flex
+          flex-direction: column
+          justify-content: space-around
+          align-items: center
+          margin-left: 0
+          height: 100%
+          .footer-google-mob
+            &__country
+              color: $color21
+              font-size: 15px
+            &__city-info
+              font-size: 14px
+              color: $color10
+              span
+                color: $color21
+                font-family: $font-arial-bold
+                position: relative
+                &::before
+                  content: ""
+                  display: block
+                  position: absolute
+                  bottom: 3px
+                  left: -13px
+                  width: 9px
+                  height: 9px
+                  background-color: $color21
+                  border-radius: 50%
+
+@media screen and (max-width: 500px) and (orientation: portrait)
+  .box-google
+    .header
+      &-search
+        &__search
+          &-types
+            min-width: max-content
+    .result-google__item-link-text-link
+      span
+        display: none
+    .footer-google
+      &__top
+        display: flex
+        flex-direction: column
+        margin: 10px 0 15px
+        span
+          line-height: 25px
+      &__info
+        display: none
+        &-mob
+          display: flex
+          flex-wrap: wrap
+          justify-content: center
+      &__wrapper
+        &-mob
+          line-height: 19px
+          .footer-google-mob
+            &__country
+              margin-bottom: 10px
+            &__city
+              &-info
+                margin-bottom: 10px
+      &__info
+        &-mob
+          margin: 0 10px
+          align-items: center
+          justify-content: space-around
+        &-item
+          margin: 0 10px
+
+
+@media screen and (max-width: 320px) and (orientation: portrait)
+  .box-google
+    .also-google
+      &__pictures
+        img
+          width: 80px
+          height: 80px
+        span
+          font-size: 12px
+
+@media screen and (max-width: 300px) and (orientation: portrait)
+  .box-google
+    .footer-google
+      &-mob__city-info
+        text-align: center
+        width: 80%
+    .result-google
+      &__fiq
+        .q-txt
+          max-width: 119px
+
+
+
+
+
+
