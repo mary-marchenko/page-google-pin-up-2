@@ -229,7 +229,7 @@
         width: 755px
 
 @media screen and (max-width: 765px) and (orientation: portrait)
-  .box-google
+  //.box-google
 
 @media screen and (max-width: 645px) and (orientation: portrait)
   .box-google
@@ -339,6 +339,8 @@
           width: 100%
           &-txt
             margin-left: 15px
+          &-img
+            flex-shrink: 0
       &__fiq
         width: 100%
         background-color: $color2
@@ -468,9 +470,45 @@
         &__search
           &-types
             min-width: max-content
-    .result-google__item-link-text-link
-      span
+    .result-google__item
+      &-link-text-link
+        span
+          display: none
+      &.youtube
         display: none
+      &.youtube-mob
+        display: flex
+      &-description
+        &-txt
+          width: 58%
+          word-break: break-all
+        &.youtube-mob
+          display: flex
+          flex-direction: column
+          .youtube
+            &__title
+              font-size: 20px
+              color: $color26
+              margin-bottom: 15px
+            &__content
+              display: flex
+              &-img
+                flex-shrink: 0
+                margin-right: 15px
+                width: 35%
+                height: auto
+              &-info
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+              &-title
+                font-size: 16px
+                line-height: 20px
+                color: $color14
+              &-descr
+                font-size: 12px
+                line-height: 16px
+
     .footer-google
       height: 100%
       &__top
@@ -502,6 +540,17 @@
         &-item
           margin: 0 10px
 
+@media screen and (max-width: 340px) and (orientation: portrait)
+  .box-google
+    .result-google__item-description
+      &.youtube-mob
+        .youtube__content
+          flex-direction: column
+          &-img
+            width: 100%
+            margin-bottom: 10px
+            img
+              width: 250px
 
 @media screen and (max-width: 320px) and (orientation: portrait)
   .box-google
