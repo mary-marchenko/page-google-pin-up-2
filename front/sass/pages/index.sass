@@ -276,15 +276,19 @@ header *, footer *
             text-decoration: none
             height: 14px
             display: flex
-            align-items: center
+            align-items: baseline
           .translate
             color: $color25
         &-img
           width: 26px
           height: 26px
+          border: 1px solid $color8
+          background-color: $color22
+          border-radius: 50%
+          display: flex
+          justify-content: center
+          align-items: center
           img
-            border: 1px solid $color8
-            background-color: $color22
             border-radius: 50%
         &-svg1
           fill: #0060f0
@@ -300,6 +304,8 @@ header *, footer *
           height: 18px
           margin-right: auto
           margin-bottom: -20px
+          &.bottom
+            margin-bottom: -27px
       &-categories
         margin-top: 9px
         padding-left: 18px

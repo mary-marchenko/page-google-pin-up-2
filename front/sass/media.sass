@@ -463,6 +463,18 @@
                   background-color: $color21
                   border-radius: 50%
 
+
+@media screen and (max-width: 575px) and (orientation: portrait)
+  .box-google
+    .result
+      &-google
+        &__item
+          &-info
+            padding: 5px 12px
+            border: 1px solid $color8
+            border-radius: 20px
+            white-space: nowrap
+
 @media screen and (max-width: 500px) and (orientation: portrait)
   .box-google
     .header
@@ -505,6 +517,7 @@
                 font-size: 16px
                 line-height: 20px
                 color: $color14
+                margin-bottom: 5px
               &-descr
                 font-size: 12px
                 line-height: 16px
@@ -552,15 +565,15 @@
             img
               width: 250px
 
-@media screen and (max-width: 320px) and (orientation: portrait)
+@media screen and (max-width: 327px) and (orientation: portrait)
   .box-google
     .also-google
       &__pictures
         img
-          width: 80px
-          height: 80px
+          width: 76px
+          height: 76px
         span
-          font-size: 12px
+          font-size: 11px
 
 @media screen and (max-width: 300px) and (orientation: portrait)
   .box-google
