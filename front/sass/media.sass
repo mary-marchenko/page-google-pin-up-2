@@ -167,10 +167,54 @@
         margin-top: 5px
         padding-top: 37px
     .footer-google
-      height: 133px
-      margin: 0 auto
-      padding-top: 68px
-      align-items: center
+      background-color: $color20
+      margin-top: 0
+      height: 100%
+      width: 100%
+      padding: 12px 0
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      flex-direction: column
+      .container-google
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-left: 0
+      &:before
+        display: none
+      &__wrapper
+        display: none
+        &-mob
+          display: flex
+          flex-direction: column
+          justify-content: space-around
+          align-items: center
+          margin-left: 0
+          height: 100%
+          .footer-google-mob
+            &__country
+              color: $color21
+              font-size: 15px
+            &__city-info
+              font-size: 14px
+              color: $color10
+              span
+                color: $color21
+                font-family: $font-arial-bold
+                position: relative
+                &::before
+                  content: ""
+                  display: block
+                  position: absolute
+                  bottom: 3px
+                  left: -13px
+                  width: 9px
+                  height: 9px
+                  background-color: $color21
+                  border-radius: 50%
 
 @media screen and (max-width: 980px) and (min-height: 501px) and (orientation: landscape)
   .box-google
@@ -196,6 +240,82 @@
             .cross
               margin-left: auto
 
+@media screen and (max-width: 932px) and (max-height: 430px) and (orientation: landscape)
+  .box-google
+    overflow-x: hidden
+    .header
+      &-search
+        &__wrapper
+          width: 100%
+    .filters-google
+      &__wrapper
+        width: 100%
+    .result-google
+      &__item
+        width: 100%
+        &-description
+          &-txt
+            width: 100%
+    .also-google
+      &__wrapper
+        width: 100%
+      &__line
+        width: 92%
+      &__box
+        &-item
+          width: 94%
+      &__more
+        width: 94%
+    .footer-google
+      background-color: $color20
+      margin-top: 0
+      height: 100%
+      width: 100%
+      padding: 12px 0
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      flex-direction: column
+      .container-google
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-left: 0
+      &:before
+        display: none
+      &__wrapper
+        display: none
+        &-mob
+          display: flex
+          flex-direction: column
+          justify-content: space-around
+          align-items: center
+          margin-left: 0
+          height: 100%
+          .footer-google-mob
+            &__country
+              color: $color21
+              font-size: 15px
+            &__city-info
+              font-size: 14px
+              color: $color10
+              span
+                color: $color21
+                font-family: $font-arial-bold
+                position: relative
+                &::before
+                  content: ""
+                  display: block
+                  position: absolute
+                  bottom: 3px
+                  left: -13px
+                  width: 9px
+                  height: 9px
+                  background-color: $color21
+                  border-radius: 50%
+
 @media screen and (max-width: 894px) and (min-height: 501px) and (orientation: landscape)
   .box-google
     .filters-google
@@ -213,23 +333,11 @@
     .container-google
       padding-right: 0
 
-
-//@media screen and (max-width: 853px) and (orientation: portrait)
-//  .box-google
-//    .header-search
-//      &__search
-//        width: 60%
-//        &-types
-//          width: 225px
-
 @media screen and (max-width: 765px) and (orientation: portrait)
   .box-google
     .filters
       &-google
         width: 755px
-
-@media screen and (max-width: 765px) and (orientation: portrait)
-  //.box-google
 
 @media screen and (max-width: 645px) and (orientation: portrait)
   .box-google
@@ -321,7 +429,7 @@
           &:first-child
             padding: 0 10px 5px 10px
             color: #111
-            border-bottom: 1 solid rgba(0, 0, 0, 0)
+            //border-bottom: 1 solid rgba(0, 0, 0, 0)
     .result-google
       &__wrapper
         margin-top: -10px
@@ -416,7 +524,7 @@
     .footer-google
       background-color: $color20
       margin-top: 0
-      height: 140px
+      height: 100%
       width: 100%
       padding: 12px 0
       display: flex
@@ -462,7 +570,6 @@
                   height: 9px
                   background-color: $color21
                   border-radius: 50%
-
 
 @media screen and (max-width: 575px) and (orientation: portrait)
   .box-google
@@ -586,9 +693,3 @@
       &__fiq
         .q-txt
           max-width: 119px
-
-
-
-
-
-
